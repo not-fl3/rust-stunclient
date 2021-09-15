@@ -1,14 +1,6 @@
 //! Simple UDP-only STUN client for resolving external IP address:port behind NAT.
 #![deny(missing_docs)]
 
-extern crate bytecodec;
-extern crate stun_codec;
-extern crate rand;  
-extern crate anyhow;
-
-extern crate tokio;
-#[cfg(feature="async")]
-
 use stun_codec::{MessageDecoder, MessageEncoder};
 
 use bytecodec::{DecodeExt, EncodeExt};
